@@ -17,8 +17,14 @@ registerBlockStyle('core/quote', {
     label: 'Critical Quote'
 });
 
-// 2. List
+// 2. Extending List ...
 registerBlockStyle('core/list', {
     name: 'pink-list',
     label: 'Pink List'
+});
+
+// 3. Extending Image ...
+registerBlockStyle('core/image', {
+    name: 'with-dark-background',
+    label: 'With Dark Background'
 });

@@ -9,30 +9,48 @@
  *
  * Color Schemes:
  * Pink: #ec008c
+ * Bark Chocolate: #231f20
  * 
  * WordPress Docs: https://developer.wordpress.org/block-editor/tutorials/javascript/extending-the-block-editor/
  */
 
- /* 1. Quote */
- .is-style-critical-quote {
-     color: #ec008c;
-     border-left: 1px solid #ec008c;
-     margin-left: 80px;
-     margin-top: 40px;
-     margin-bottom: 40px;
-     padding: 30px;
-     position: relative;
- }
- .is-style-critical-quote:before {
-     font-family: feather !important;
-     content: "\e81c";
-     position: absolute;
-     left: -70px;
-     font-size: 50px;
-     top: 15%;
- }
-
- /* 2. List Styles */
- .is-style-pink-list li {
+/* 1. Quote */
+.is-style-critical-quote {
     color: #ec008c;
- }
+    border-left: 1px solid #ec008c;
+    margin-left: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 30px;
+    position: relative;
+}
+.is-style-critical-quote:before {
+    font-family: feather !important;
+    content: "\e81c";
+    position: absolute;
+    left: -70px;
+    font-size: 50px;
+    top: 15%;
+}
+
+/* 2. List Styles */
+.is-style-pink-list li {
+    color: #ec008c;
+}
+
+/* 3. Image Styles */
+.is-style-with-dark-background {
+    display: flex !important;
+    flex-direction: column-reverse;
+    background: #231f20;
+    padding: 30px;
+}
+.is-style-with-dark-background figcaption {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: left;
+}
+.is-style-with-dark-background figure {
+    display: flex !important;
+    flex-direction: column-reverse;
+}
