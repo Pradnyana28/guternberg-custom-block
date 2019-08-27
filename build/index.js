@@ -71,10 +71,71 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/components/list-block.js":
+/*!**************************************!*\
+  !*** ./src/components/list-block.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Required components
+ */
+var __ = wp.i18n.__;
+var createElement = wp.element.createElement;
+var registerBlockType = wp.blocks.registerBlockType;
+var el = createElement;
+registerBlockType('dflow/block-list', {
+  title: __('Block List'),
+  icon: 'list',
+  category: 'common',
+  keywords: ['list', 'block', 'dflow'],
+  edit: function edit(props) {
+    return el('div', {
+      className: props.className
+    }, el('div', {
+      className: 'dflow-block-list-wrap'
+    }, el('div', {}, 'Description'), el('div', {}, 'Subscribe')));
+  },
+  save: function save(props) {
+    return el('div', {
+      className: props.className
+    }, el('form', {
+      className: 'misha-block-form-wrap'
+    }, el('input', {
+      'type': 'email',
+      'placeholder': 'Enter your email address'
+    }), el('button', {}, 'Subscribe')));
+  }
+});
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Custom block javascript file
+ * 
+ * Authors: dFlow Team
+ * Created by: Kadek Pradnyana (https://github.com/Pradnyana28)
+ * 
+ * WordPress Docs: https://developer.wordpress.org/block-editor/tutorials/javascript/extending-the-block-editor/
+ */
+__webpack_require__(/*! ./components/list-block */ "./src/components/list-block.js");
+
+__webpack_require__(/*! ./register-block-styles */ "./src/register-block-styles.js");
+
+/***/ }),
+
+/***/ "./src/register-block-styles.js":
+/*!**************************************!*\
+  !*** ./src/register-block-styles.js ***!
+  \**************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -83,6 +144,9 @@
  * 
  * Table of contents
  * 1. Extending Quote
+ * 2. Extending List
+ * 3. Extending List: with background
+ * 4. Extending Image
  * 
  * Authors: dFlow Team
  * Created by: Kadek Pradnyana (https://github.com/Pradnyana28)
@@ -99,7 +163,12 @@ registerBlockStyle('core/quote', {
 registerBlockStyle('core/list', {
   name: 'pink-list',
   label: 'Pink List'
-}); // 3. Extending Image ...
+}); // 3. Extending List ...
+
+registerBlockStyle('core/list', {
+  name: 'pink-list-background',
+  label: 'With Background'
+}); // 4. Extending Image ...
 
 registerBlockStyle('core/image', {
   name: 'with-dark-background',

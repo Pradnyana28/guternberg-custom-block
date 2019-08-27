@@ -37,6 +37,16 @@
 .is-style-pink-list li {
     color: #ec008c;
 }
+.is-style-pink-list-background {
+    background: #ec008c;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    margin-top: -50px;
+}
+.is-style-pink-list-background li {
+    color: #ffffff;
+}
 
 /* 3. Image Styles */
 .is-style-with-dark-background {
@@ -53,4 +63,12 @@
 .is-style-with-dark-background figure {
     display: flex !important;
     flex-direction: column-reverse;
+}
+
+/* Custom */
+.has-background.has-pink-background-color {
+    background: #ec008c;
+}
+.has-text-color.has-white-color {
+    color: #ffffff;
 }
