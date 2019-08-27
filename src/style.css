@@ -1,0 +1,38 @@
+/**
+ * Custom block styles file
+ * 
+ * Table of contents
+ * 1. Extending Quote
+ * 
+ * Authors: dFlow Team
+ * Created by: Kadek Pradnyana (https://github.com/Pradnyana28)
+ *
+ * Color Schemes:
+ * Pink: #ec008c
+ * 
+ * WordPress Docs: https://developer.wordpress.org/block-editor/tutorials/javascript/extending-the-block-editor/
+ */
+
+ /* 1. Quote */
+ .is-style-critical-quote {
+     color: #ec008c;
+     border-left: 1px solid #ec008c;
+     margin-left: 80px;
+     margin-top: 40px;
+     margin-bottom: 40px;
+     padding: 30px;
+     position: relative;
+ }
+ .is-style-critical-quote:before {
+     font-family: feather !important;
+     content: "\e81c";
+     position: absolute;
+     left: -70px;
+     font-size: 50px;
+     top: 15%;
+ }
+
+ /* 2. List Styles */
+ .is-style-pink-list li {
+    color: #ec008c;
+ }
