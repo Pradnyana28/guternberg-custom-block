@@ -38,3 +38,9 @@ registerBlockStyle('core/image', {
     name: 'with-dark-background',
     label: 'With Dark Background'
 });
+
+// 5. Extending Separator ...
+registerBlockStyle('core/separator', {
+    name: 'five-dots-separator',
+    label: '5 Dots'
+});

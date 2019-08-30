@@ -65,6 +65,39 @@
     flex-direction: column-reverse;
 }
 
+/* 3. Separator */
+.wp-block-separator {
+    border: none;
+    border-bottom: 2px solid #8f98a1;
+    margin: 1.65em auto;
+}
+.wp-block-separator.is-style-default {
+    max-width: 100px;
+}
+.wp-block-separator.is-style-wide {
+    border-bottom-width: 2px;
+}
+.wp-block-separator.is-style-dots:before {
+    font-weight: bold;
+}
+.wp-block-separator.is-style-five-dots-separator {
+    background: none;
+    border: none;
+    text-align: center;
+    max-width: none !important;
+    line-height: 1;
+    height: auto;
+}
+.wp-block-separator.is-style-five-dots-separator:before {
+    content: "\00b7 \00b7 \00b7 \00b7 \00b7";
+    color: #191e23;
+    font-size: 20px;
+    letter-spacing: 2em;
+    padding-left: 2em;
+    font-weight: bold;
+    font-family: serif;
+}
+
 /* Custom */
 .has-background.has-pink-background-color {
     background: #ec008c;

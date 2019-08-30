@@ -128,7 +128,7 @@ registerBlockType('dflow/block-list', {
  */
 __webpack_require__(/*! ./components/list-block */ "./src/components/list-block.js");
 
-__webpack_require__(/*! ./register-block-styles */ "./src/register-block-styles.js");
+__webpack_require__(/*! ./register-block-styles */ "./src/register-block-styles.js"); // require('./formats/underline');
 
 /***/ }),
 
@@ -173,6 +173,11 @@ registerBlockStyle('core/list', {
 registerBlockStyle('core/image', {
   name: 'with-dark-background',
   label: 'With Dark Background'
+}); // 5. Extending Separator ...
+
+registerBlockStyle('core/separator', {
+  name: 'five-dots-separator',
+  label: '5 Dots'
 });
 
 /***/ })

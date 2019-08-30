@@ -9,3 +9,4 @@
 
 require('./components/list-block');
 require('./register-block-styles');
+// require('./formats/underline');
