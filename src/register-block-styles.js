@@ -44,3 +44,9 @@ registerBlockStyle('core/separator', {
     name: 'five-dots-separator',
     label: '5 Dots'
 });
+
+// 6. Blank separator
+registerBlockStyle('core/separator', {
+    name: 'blank-separator',
+    label: 'Blank'
+});

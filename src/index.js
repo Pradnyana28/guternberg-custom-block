@@ -9,4 +9,5 @@
 
 require('./components/list-block');
 require('./register-block-styles');
+require('./hooks/image');
 // require('./formats/underline');

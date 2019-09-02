@@ -68,17 +68,19 @@
 /* 3. Separator */
 .wp-block-separator {
     border: none;
-    border-bottom: 2px solid #8f98a1;
-    margin: 1.65em auto;
+    border-bottom: 4px solid #8f98a1;
+    margin: 50px auto;
 }
 .wp-block-separator.is-style-default {
-    max-width: 100px;
+    max-width: 250px;
 }
 .wp-block-separator.is-style-wide {
-    border-bottom-width: 2px;
+    border-bottom-width: 4px;
 }
 .wp-block-separator.is-style-dots:before {
     font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 50px;
 }
 .wp-block-separator.is-style-five-dots-separator {
     background: none;
@@ -91,17 +93,71 @@
 .wp-block-separator.is-style-five-dots-separator:before {
     content: "\00b7 \00b7 \00b7 \00b7 \00b7";
     color: #191e23;
-    font-size: 20px;
-    letter-spacing: 2em;
+    font-size: 50px;
+    letter-spacing: 50px;
     padding-left: 2em;
     font-weight: bold;
     font-family: serif;
 }
+.wp-block-separator.is-style-blank-separator {
+    border: none;
+}
+.wp-block-separator.is-style-blank-separator:before {
+    content: "";
+    height: 50px;
+}
 
-/* Custom */
+/* Color Palettes */
+.is-style-dots.has-border-color-green:before,
+.is-style-five-dots-separator.has-border-color-green:before {
+    color: #58AD69 !important;
+}
+.is-style-dots.has-border-color-pink:before,
+.is-style-five-dots-separator.has-border-color-pink:before {
+    color: #ec008c !important;
+}
+.is-style-dots.has-border-color-bark-chocolate:before,
+.is-style-five-dots-separator.has-border-color-bark-chocolate:before {
+    color: #231f20 !important;
+}
+.is-style-dots.has-border-color-blue:before,
+.is-style-five-dots-separator.has-border-color-blue:before {
+    color: #59BACC !important;
+}
+.is-style-dots.has-border-color-yellow:before,
+.is-style-five-dots-separator.has-border-color-yellow:before {
+    color: #FFBC49 !important;
+}
+.is-style-dots.has-border-color-white:before,
+.is-style-five-dots-separator.has-border-color-white:before {
+    color: #ffffff !important;
+}
 .has-background.has-pink-background-color {
     background: #ec008c;
 }
+
 .has-text-color.has-white-color {
     color: #ffffff;
+}
+
+.has-border-color-green {
+    border-bottom-color: #58AD69 !important;
+}
+.has-border-color-pink {
+    border-bottom-color: #ec008c !important;
+}
+.has-border-color-bark-chocolate {
+    border-bottom-color: #231f20 !important;
+}
+.has-border-color-blue {
+    border-bottom-color: #59BACC !important;
+}
+.has-border-color-yellow {
+    border-bottom-color: #FFBC49 !important;
+}
+.has-border-color-orange {
+    border-bottom-color: #E2574C !important;
+}
+.has-border-color-white {
+    border-bottom-color: #ffffff !important;
 }

@@ -9,7 +9,7 @@ Version: 1.0.0
 */
 
 function guternberg_scripts_enqueue() {
-    wp_enqueue_script( 'custom-block-script', plugins_url( 'build/index.js', __FILE__ ), ['wp-blocks'] );
+    wp_enqueue_script( 'custom-block-script', plugins_url( 'build/index.js', __FILE__ ), ['wp-blocks', 'wp-editor'] );
 }
 add_action( 'enqueue_block_editor_assets', 'guternberg_scripts_enqueue' );
 
