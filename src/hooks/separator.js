@@ -34,7 +34,7 @@ const withColorPalettes = createHigherOrderComponent( ( BlockEdit ) => {
 		}
 
         let { setAttributes, attributes: { borderColor, className } } = props
-        let classArray = className.split(' ')
+        let classArray = className !== undefined ? className.split(' ') : ['is-style-default']
         if (borderColor && classArray.length > 0) {
             let borderColorClassName = `has-border-color-${colorNames[borderColor]}`
             classArray = classArray.map(item => {
