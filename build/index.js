@@ -173,10 +173,10 @@ registerBlockType('dflow/block-list', {
 
 /***/ }),
 
-/***/ "./src/hooks/image.js":
-/*!****************************!*\
-  !*** ./src/hooks/image.js ***!
-  \****************************/
+/***/ "./src/hooks/separator.js":
+/*!********************************!*\
+  !*** ./src/hooks/separator.js ***!
+  \********************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -278,7 +278,7 @@ __webpack_require__(/*! ./components/list-block */ "./src/components/list-block.
 
 __webpack_require__(/*! ./register-block-styles */ "./src/register-block-styles.js");
 
-__webpack_require__(/*! ./hooks/image */ "./src/hooks/image.js"); // require('./formats/underline');
+__webpack_require__(/*! ./hooks/separator */ "./src/hooks/separator.js"); // require('./formats/underline');
 
 /***/ }),
 
