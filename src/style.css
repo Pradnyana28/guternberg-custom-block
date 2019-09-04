@@ -44,8 +44,24 @@
     margin-bottom: 0;
     margin-top: -50px;
 }
-.is-style-pink-list-background li {
+.is-style-pink-list-background ul li {
     color: #ffffff;
+}
+.is-style-pink-list-with-border {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+.is-style-pink-list-with-border li {
+    padding: 20px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+.is-style-pink-list-with-border li:before {
+    content: "\2022";
+    font-size: 20px;
+    color: #ec008c;
+    font-weight: bold;
+    display: inline-block;
+    width: 18px;
 }
 
 /* 3. Image Styles */
@@ -107,7 +123,7 @@
     height: 50px;
 }
 
-/* Color Palettes */
+/* 4. Color Palettes */
 .is-style-dots.has-border-color-green:before,
 .is-style-five-dots-separator.has-border-color-green:before {
     color: #58AD69 !important;
@@ -160,4 +176,26 @@
 }
 .has-border-color-white {
     border-bottom-color: #ffffff !important;
+}
+
+/* 5. Advance Table */
+.wp-block-advgb-table thead tr td {
+    font-size: 14px !important;
+}
+.wp-block-advgb-table thead tr:last-child td {
+    border-bottom-color: #E8E8E8 !important;
+}
+.wp-block-advgb-table thead tr:first-child td:first-child {
+    font-size: 20px !important;
+}
+.wp-block-advgb-table.is-style-stripes tbody tr:nth-child(odd) {
+    background-color: #FAF7F9 !important;
+}
+.wp-block-advgb-table.is-style-stripes tbody tr td {
+    font-size: 13px !important;
+    border-right: 1px solid #e8e8e8;
+}
+.wp-block-advgb-table.is-style-stripes tbody tr td:first-child {
+    font-size: 14px !important;
+    color: #000000 !important;
 }
