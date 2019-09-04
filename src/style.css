@@ -44,12 +44,24 @@
     margin-bottom: 0;
     margin-top: -50px;
 }
-.is-style-pink-list-background li {
+.is-style-pink-list-background ul li {
     color: #ffffff;
+}
+.is-style-pink-list-with-border {
+    list-style: none;
 }
 .is-style-pink-list-with-border li {
     padding: 20px 0;
     border-bottom: 1px solid #e8e8e8;
+}
+.is-style-pink-list-with-border li:before {
+    content: "\2022";
+    font-size: 20px;
+    color: #ec008c;
+    font-weight: bold;
+    display: inline-block;
+    width: 18px;
+    margin-left: -18px;
 }
 
 /* 3. Image Styles */
@@ -180,7 +192,7 @@
     background-color: #FAF7F9 !important;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td {
-    font-size: 12px !important;
+    font-size: 13px !important;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td:first-child {
     font-size: 14px !important;
