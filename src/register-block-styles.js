@@ -53,3 +53,9 @@ registerBlockStyle('core/separator', {
     name: 'blank-separator',
     label: 'Blank'
 });
+
+// 6. Extending table style
+registerBlockStyle('core/table', {
+    name: 'colorful-table-fixed-footer',
+    label: 'Colorful & Fixed Footer'
+});
