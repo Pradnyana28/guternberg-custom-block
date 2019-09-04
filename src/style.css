@@ -48,7 +48,8 @@
     color: #ffffff;
 }
 .is-style-pink-list-with-border {
-    list-style: none;
+    list-style: none !important;
+    padding-left: 0 !important;
 }
 .is-style-pink-list-with-border li {
     padding: 20px 0;
@@ -61,7 +62,6 @@
     font-weight: bold;
     display: inline-block;
     width: 18px;
-    margin-left: -18px;
 }
 
 /* 3. Image Styles */
@@ -193,6 +193,7 @@
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td {
     font-size: 13px !important;
+    border-right: 1px solid #e8e8e8;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td:first-child {
     font-size: 14px !important;
