@@ -211,6 +211,9 @@
     font-size: 14px !important;
     color: #000000 !important;
 }
+.wp-block-advgb-table.is-style-stripes tbody tr td:last-child {
+    border-right: none !important;
+}
 .wp-block-advgb-table.is-style-colorful-table-fixed-footer tbody tr td {
     border-right-color: #e8e8e8 !important;
     border-right-width: 1px !important;
@@ -230,12 +233,12 @@
     border-bottom-width: 1px !important;
     border-bottom-color: #e8e8e8 !important;
 }
-.wp-block-advgb-table.is-style-stripes tbody tr:nth-child(odd) {
+/* .wp-block-advgb-table.is-style-stripes tbody tr:nth-child(odd) {
     background-color: transparent !important;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr:nth-child(even) {
     background-color: #FAF7F9 !important;
-}
+} */
 .advgb-column-inner {
     padding: 0 20px;
 }
