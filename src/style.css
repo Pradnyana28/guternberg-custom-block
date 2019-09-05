@@ -196,6 +196,7 @@
 }
 .wp-block-advgb-table thead tr:last-child td {
     border-bottom-color: #E8E8E8 !important;
+    border-bottom-width: 1px !important;
 }
 .wp-block-advgb-table thead tr:first-child td:first-child {
     font-size: 20px !important;
@@ -204,11 +205,11 @@
     background-color: #FAF7F9 !important;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td {
-    font-size: 13px !important;
+    font-size: 11px !important;
     border-right: 1px solid #e8e8e8;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td:first-child {
-    font-size: 14px !important;
+    font-size: 11px !important;
     color: #000000 !important;
 }
 .wp-block-advgb-table.is-style-stripes tbody tr td:last-child {
@@ -239,14 +240,3 @@
 .wp-block-advgb-table.is-style-stripes tbody tr:nth-child(even) {
     background-color: #FAF7F9 !important;
 } */
-.advgb-column-inner {
-    padding: 0 20px;
-}
-.advgb-columns-wrapper .advgb-columns {
-    bottom: 10px;
-    width: 100%;
-    left: 0;
-    background: #fff;
-    z-index: 2;
-    transition: .5s;
-}
