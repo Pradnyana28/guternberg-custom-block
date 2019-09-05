@@ -34,8 +34,17 @@
 }
 
 /* 2. List Styles */
-.is-style-pink-list li {
+.is-style-pink-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+}
+.is-style-pink-list li:before {
+    content: "\2022";
+    font-size: 20px;
     color: #ec008c;
+    font-weight: bold;
+    display: inline-block;
+    width: 18px;
 }
 .is-style-pink-list-background {
     background: #ec008c;
