@@ -38,6 +38,9 @@
     list-style: none !important;
     padding-left: 0 !important;
 }
+.is-style-pink-list li {
+    line-height: 30px;
+}
 .is-style-pink-list li:before {
     content: "\2022";
     font-size: 20px;
