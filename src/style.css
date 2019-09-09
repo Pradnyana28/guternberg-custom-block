@@ -240,3 +240,49 @@
 .wp-block-advgb-table.is-style-stripes tbody tr:nth-child(even) {
     background-color: #FAF7F9 !important;
 } */
+
+/* Accordion */
+summary::-webkit-details-marker {
+    display: none;
+}
+.default-accordion .wp-block-coblocks-accordion-item details {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+.default-accordion .wp-block-coblocks-accordion-item details summary {
+    display: block;
+    position: relative;
+    background: transparent;
+    padding: 0;
+}
+.default-accordion .wp-block-coblocks-accordion-item details summary strong {
+    display: block;
+    width: 85%;
+}
+.default-accordion .wp-block-coblocks-accordion-item details summary:hover:after {
+    background: transparent;
+    outline: none;
+}
+.default-accordion .wp-block-coblocks-accordion-item details summary:focus {
+    outline: none;
+}
+.default-accordion .wp-block-coblocks-accordion-item details summary:after {
+    font-family: feather;
+    content: '\e842';
+    position: absolute;
+    font-size: 25px;
+    right: 25px;
+    top: -6px;
+    left: unset;
+    bottom: unset;
+    transition: .5s;
+    color: #ec008c;
+}
+.default-accordion .wp-block-coblocks-accordion-item details[open] summary:after {
+    transform: rotate(180deg);
+}
+.default-accordion .wp-block-coblocks-accordion-item details div {
+    border: none;
+    border-radius: 0;
+    padding: 10px 0;
+}

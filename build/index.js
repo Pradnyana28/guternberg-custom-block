@@ -1,12 +1,361 @@
-!function(e){var t={};function r(o){if(t[o])return t[o].exports;var n=t[o]={i:o,l:!1,exports:{}};return e[o].call(n.exports,n,n.exports,r),n.l=!0,n.exports}r.m=e,r.c=t,r.d=function(e,t,o){r.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:o})},r.r=function(e){Object.defineProperty(e,"__esModule",{value:!0})},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="",r(r.s=5)}([function(e,t){!function(){e.exports=this.wp.element}()},function(e,t,r){var o;
-/*!
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./node_modules/classnames/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/classnames/index.js ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
   Copyright (c) 2017 Jed Watson.
   Licensed under the MIT License (MIT), see
   http://jedwatson.github.io/classnames
 */
-/*!
-  Copyright (c) 2017 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-!function(){"use strict";var r={}.hasOwnProperty;function n(){for(var e=[],t=0;t<arguments.length;t++){var o=arguments[t];if(o){var l=typeof o;if("string"===l||"number"===l)e.push(o);else if(Array.isArray(o)&&o.length){var a=n.apply(null,o);a&&e.push(a)}else if("object"===l)for(var i in o)r.call(o,i)&&o[i]&&e.push(i)}}return e.join(" ")}void 0!==e&&e.exports?(n.default=n,e.exports=n):void 0===(o=function(){return n}.apply(t,[]))||(e.exports=o)}()},function(e,t,r){"use strict";r.r(t);var o=r(0),n=(r(1),wp.compose.createHigherOrderComponent),l=wp.element.Fragment,a=wp.editor,i=a.InspectorControls,c=a.PanelColorSettings,s=wp.hooks.addFilter,u=wp.i18n.__,p=["core/separator"],f={"#ec008c":"pink","#231f20":"bark-chocolate","#59BACC":"blue","#58AD69":"green","#FFBC49":"yellow","#E2574C":"orange","#FFFFFF":"white"};s("editor.BlockEdit","extend-block-separator/with-color-palettes",n(function(e){return function(t){if(!p.includes(t.name))return Object(o.createElement)(e,t);var r=t.setAttributes,n=t.attributes,a=n.borderColor,s=n.className,d=void 0!==s?s.split(" "):["is-style-default"];if(a&&d.length>0){var b="has-border-color-".concat(f[a]);d=(d=d.map(function(e){var t="";return e.includes("is-style")&&(t=e),t})).filter(function(e){return""!==e});var m="".concat(d.join(" ")," ").concat(b);t.attributes.className=m}return Object(o.createElement)(l,null,Object(o.createElement)(e,t),Object(o.createElement)(i,null,Object(o.createElement)(c,{title:u("Color Settings"),colorSettings:[{value:"#000000",onChange:function(e){return r({borderColor:e})},label:u("Border Color")}]})))}},"withColorPalettes"))},function(e,t){var r=wp.blocks.registerBlockStyle;r("core/quote",{name:"critical-quote",label:"Critical Quote"}),r("core/list",{name:"pink-list",label:"Pink List"}),r("core/list",{name:"pink-list-background",label:"With Background"}),r("core/list",{name:"pink-list-with-border",label:"With Border Bottom"}),r("core/image",{name:"with-dark-background",label:"With Dark Background"}),r("core/separator",{name:"five-dots-separator",label:"5 Dots"}),r("core/separator",{name:"blank-separator",label:"Blank"}),r("core/table",{name:"colorful-table-fixed-footer",label:"Colorful & Fixed Footer"})},function(e,t){var r=wp.i18n.__,o=wp.element.createElement;(0,wp.blocks.registerBlockType)("dflow/block-list",{title:r("Block List"),icon:"list",category:"common",keywords:["list","block","dflow"],edit:function(e){return o("div",{className:e.className},o("div",{className:"dflow-block-list-wrap"},o("div",{},"Description"),o("div",{},"Subscribe")))},save:function(e){return o("div",{className:e.className},o("form",{className:"misha-block-form-wrap"},o("input",{type:"email",placeholder:"Enter your email address"}),o("button",{},"Subscribe")))}})},function(e,t,r){r(4),r(3),r(2)}]);
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg) && arg.length) {
+				var inner = classNames.apply(null, arg);
+				if (inner) {
+					classes.push(inner);
+				}
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (typeof module !== 'undefined' && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
+/***/ "./src/components/list-block.js":
+/*!**************************************!*\
+  !*** ./src/components/list-block.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Required components
+ */
+var __ = wp.i18n.__;
+var createElement = wp.element.createElement;
+var registerBlockType = wp.blocks.registerBlockType;
+var el = createElement;
+registerBlockType('dflow/block-list', {
+  title: __('Block List'),
+  icon: 'list',
+  category: 'common',
+  keywords: ['list', 'block', 'dflow'],
+  edit: function edit(props) {
+    return el('div', {
+      className: props.className
+    }, el('div', {
+      className: 'dflow-block-list-wrap'
+    }, el('div', {}, 'Description'), el('div', {}, 'Subscribe')));
+  },
+  save: function save(props) {
+    return el('div', {
+      className: props.className
+    }, el('form', {
+      className: 'misha-block-form-wrap'
+    }, el('input', {
+      'type': 'email',
+      'placeholder': 'Enter your email address'
+    }), el('button', {}, 'Subscribe')));
+  }
+});
+
+/***/ }),
+
+/***/ "./src/hooks/separator.js":
+/*!********************************!*\
+  !*** ./src/hooks/separator.js ***!
+  \********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var createHigherOrderComponent = wp.compose.createHigherOrderComponent;
+var Fragment = wp.element.Fragment;
+var _wp$editor = wp.editor,
+    InspectorControls = _wp$editor.InspectorControls,
+    PanelColorSettings = _wp$editor.PanelColorSettings;
+var addFilter = wp.hooks.addFilter;
+var __ = wp.i18n.__; // Enable spacing control on the following blocks
+
+var enableSpacingControlOnBlocks = ['core/separator'];
+var colorNames = {
+  '#ec008c': 'pink',
+  '#231f20': 'bark-chocolate',
+  '#59BACC': 'blue',
+  '#58AD69': 'green',
+  '#FFBC49': 'yellow',
+  '#E2574C': 'orange',
+  '#FFFFFF': 'white'
+  /**
+   * Create HOC to add spacing control to inspector controls of block.
+   */
+
+};
+var withColorPalettes = createHigherOrderComponent(function (BlockEdit) {
+  return function (props) {
+    // Do nothing if it's another block than our defined ones.
+    if (!enableSpacingControlOnBlocks.includes(props.name)) {
+      return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(BlockEdit, props);
+    }
+
+    var setAttributes = props.setAttributes,
+        _props$attributes = props.attributes,
+        borderColor = _props$attributes.borderColor,
+        className = _props$attributes.className;
+    var classArray = className !== undefined ? className.split(' ') : ['is-style-default'];
+
+    if (borderColor && classArray.length > 0) {
+      var borderColorClassName = "has-border-color-".concat(colorNames[borderColor]);
+      classArray = classArray.map(function (item) {
+        var newClassName = '';
+
+        if (item.includes('is-style')) {
+          newClassName = item;
+        }
+
+        return newClassName;
+      });
+      classArray = classArray.filter(function (item) {
+        return item !== '';
+      });
+      var classString = "".concat(classArray.join(' '), " ").concat(borderColorClassName);
+      props.attributes.className = classString;
+    }
+
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(Fragment, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(BlockEdit, props), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(InspectorControls, null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(PanelColorSettings, {
+      title: __('Color Settings'),
+      colorSettings: [{
+        value: '#000000',
+        onChange: function onChange(colorValue) {
+          return setAttributes({
+            borderColor: colorValue
+          });
+        },
+        label: __('Border Color')
+      }]
+    })));
+  };
+}, 'withColorPalettes');
+addFilter('editor.BlockEdit', 'extend-block-separator/with-color-palettes', withColorPalettes);
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Custom block javascript file
+ * 
+ * Authors: dFlow Team
+ * Created by: Kadek Pradnyana (https://github.com/Pradnyana28)
+ * 
+ * WordPress Docs: https://developer.wordpress.org/block-editor/tutorials/javascript/extending-the-block-editor/
+ */
+__webpack_require__(/*! ./components/list-block */ "./src/components/list-block.js");
+
+__webpack_require__(/*! ./register-block-styles */ "./src/register-block-styles.js");
+
+__webpack_require__(/*! ./hooks/separator */ "./src/hooks/separator.js"); // require('./formats/underline');
+
+/***/ }),
+
+/***/ "./src/register-block-styles.js":
+/*!**************************************!*\
+  !*** ./src/register-block-styles.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+/**
+ * Custom block javascript file
+ * 
+ * Table of contents
+ * 1. Extending Quote
+ * 2. Extending List
+ * 3. Extending List: with background
+ * 4. Extending Image
+ * 5. Extending Separator
+ * 
+ * Authors: dFlow Team
+ * Created by: Kadek Pradnyana (https://github.com/Pradnyana28)
+ * 
+ * WordPress Docs: https://developer.wordpress.org/block-editor/tutorials/javascript/extending-the-block-editor/
+ */
+var registerBlockStyle = wp.blocks.registerBlockStyle; //  1. Extending quote ...
+
+registerBlockStyle('core/quote', {
+  name: 'critical-quote',
+  label: 'Critical Quote'
+}); // 2. Extending List ...
+
+registerBlockStyle('core/list', {
+  name: 'pink-list',
+  label: 'Pink List'
+}); // 3. Extending List ...
+
+registerBlockStyle('core/list', {
+  name: 'pink-list-background',
+  label: 'With Background'
+});
+registerBlockStyle('core/list', {
+  name: 'pink-list-with-border',
+  label: 'With Border Bottom'
+}); // 4. Extending Image ...
+
+registerBlockStyle('core/image', {
+  name: 'with-dark-background',
+  label: 'With Dark Background'
+}); // 5. Extending Separator ...
+
+registerBlockStyle('core/separator', {
+  name: 'five-dots-separator',
+  label: '5 Dots'
+});
+registerBlockStyle('core/separator', {
+  name: 'blank-separator',
+  label: 'Blank'
+}); // 6. Extending table style
+
+registerBlockStyle('core/table', {
+  name: 'colorful-table-fixed-footer',
+  label: 'Colorful & Fixed Footer'
+});
+
+/***/ }),
+
+/***/ "@wordpress/element":
+/*!******************************************!*\
+  !*** external {"this":["wp","element"]} ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+(function() { module.exports = this["wp"]["element"]; }());
+
+/***/ })
+
+/******/ });
+//# sourceMappingURL=index.js.map
