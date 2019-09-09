@@ -245,8 +245,12 @@
 summary::-webkit-details-marker {
     display: none;
 }
+.default-accordion .wp-block-coblocks-accordion-item {
+    margin-bottom: 0;
+}
 .default-accordion .wp-block-coblocks-accordion-item details {
     padding-bottom: 30px;
+    padding-top: 30px;
     border-bottom: 1px solid #e8e8e8;
 }
 .default-accordion .wp-block-coblocks-accordion-item details summary {
@@ -272,7 +276,8 @@ summary::-webkit-details-marker {
     position: absolute;
     font-size: 25px;
     right: 25px;
-    top: -6px;
+    top: 50%;
+    margin-top: -18px;
     left: unset;
     bottom: unset;
     transition: .5s;
