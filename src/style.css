@@ -167,6 +167,40 @@
 .has-text-color.has-white-color {
     color: #ffffff;
 }
+.has-text-color.has-bark-chocolate-color {
+    color: #231f20;
+}
+.has-text-color.has-pink-color {
+    color: #ec008c;
+}
+.has-text-color.has-yellow-color {
+    color: #FFBC49;
+}
+.has-text-color.has-orange-color {
+    color: #ffffff;
+}
+.has-text-color.has-green-color {
+    color: #E2574C;
+}
+.has-text-color.has-red-color {
+    color: #C21F45;
+}
+.has-text-color.has-purple-color {
+    color: #662D91;
+}
+.has-text-color.has-blue-color {
+    color: #59BACC;
+}
+
+.has-medium-font-size {
+    font-size: 20px !important;
+}
+.has-large-font-size {
+    font-size: 36px !important;
+}
+.has-huge-font-size {
+    font-size: 48px !important;
+}
 
 .has-border-color-green {
     border-bottom-color: #58AD69 !important;
@@ -296,4 +330,9 @@ summary::-webkit-details-marker {
     border: none;
     border-radius: 0;
     padding: 10px 0;
+}
+
+/* Make it fixed */
+.make-it-fixed hr {
+    margin: 0 !important;
 }
