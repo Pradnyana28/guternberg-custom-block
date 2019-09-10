@@ -189,6 +189,12 @@
 .has-border-color-white {
     border-bottom-color: #ffffff !important;
 }
+.has-border-color-red {
+    border-bottom-color: #C21F45 !important;
+}
+.has-border-color-purple {
+    border-bottom-color: #662D91 !important;
+}
 
 /* 5. Advance Table */
 .wp-block-advgb-table thead tr td {

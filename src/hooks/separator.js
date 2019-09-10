@@ -18,7 +18,9 @@ const colorNames = {
     '#58AD69': 'green',
     '#FFBC49': 'yellow',
     '#E2574C': 'orange',
-    '#FFFFFF': 'white'
+    '#FFFFFF': 'white',
+    '#C21F45': 'red',
+    '#662D91': 'purple'
 }
 
 /**
